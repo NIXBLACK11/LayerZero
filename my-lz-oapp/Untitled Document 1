@@ -1,0 +1,30 @@
+oft: LhgU1pLXDytcdQgcv2uhUHjAfiX2kD2Wu9v6yKczZng
+endpoint: 62x2dW96N5h5jd73q4KXHAMHDmvtan2fXJdCMAPoWs1M
+
+
+npx hardhat lz:oft:solana:create --eid 40168 --program-id LhgU1pLXDytcdQgcv2uhUHjAfiX2kD2Wu9v6yKczZng --amount 20000000000 --only-oft-store true
+LhgU1pLXDytcdQgcv2uhUHjAfiX2kD2Wu9v6yKczZng
+
+{
+    "programId": "LhgU1pLXDytcdQgcv2uhUHjAfiX2kD2Wu9v6yKczZng",
+    "mint": "2FgykLsPcEyrokpWaaYm7Vsb9BLHEnnDiXorsdnA7FQw",
+    "mintAuthority": "3xtNdG4yEwAFFvv2f7oGT5w5UnxQYAjy3RUCBs8cieNy",
+    "escrow": "3MbssG3jiyrdXxNGuegyke9Tdoi7JQxKVFDpn9YwbRZS",
+    "oftStore": "AQaB1QwvG1NHUXzUsnXLqbHd1VQee1Ctc2eFqE69gwT5"
+}
+
+npx hardhat lz:oapp:init:solana --oapp-config layerzero.config.ts --solana-secret-key 5Ke1LPejAA3iggbGGMvFNMD2PNy7TzCXekz4fLppjXT2Pin14Bnx8bBBdtAZvifLsPZ441ymnEh8Jiuea9tdHbrp --solana-program-id LhgU1pLXDytcdQgcv2uhUHjAfiX2kD2Wu9v6yKczZng
+
+npx hardhat lz:oapp:wire --oapp-config layerzero.config.ts --solana-secret-key 5Ke1LPejAA3iggbGGMvFNMD2PNy7TzCXekz4fLppjXT2Pin14Bnx8bBBdtAZvifLsPZ441ymnEh8Jiuea9tdHbrp --solana-program-id LhgU1pLXDytcdQgcv2uhUHjAfiX2kD2Wu9v6yKczZng
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+npx hardhat lz:oft:solana:send --amount 10000000000 --from-eid 40168 --to 0x8ffcF7E7109416F2c34b6e226556a58Fa68BD779 --to-eid 40161 --mint 2FgykLsPcEyrokpWaaYm7Vsb9BLHEnnDiXorsdnA7FQw --program-id LhgU1pLXDytcdQgcv2uhUHjAfiX2kD2Wu9v6yKczZng --escrow 3MbssG3jiyrdXxNGuegyke9Tdoi7JQxKVFDpn9YwbRZS
+
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+Could not find MNEMONIC or PRIVATE_KEY environment variables. It will not be possible to execute transactions in your example.
+✅ Sent 2000000000 token(s) to destination EID: 40161!
+View Solana transaction here: https://explorer.solana.com/tx/3onTKJxjVNvc7PWxGyYYgxYfXxxc9Jz686ZrTjCUTtXJZtpDE659o9xw2CfhLnHysY8sG9jvbwX5fG2cjCscdWPk?cluster=devnet
+Track cross-chain transfer here: https://testnet.layerzeroscan.com/tx/3onTKJxjVNvc7PWxGyYYgxYfXxxc9Jz686ZrTjCUTtXJZtpDE659o9xw2CfhLnHysY8sG9jvbwX5fG2cjCscdWPk
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+npx hardhat --network sepolia-testnet send --dst-eid 40168 --amount 10000000000 --to BQHXVMJo4zGSnLdFRrDnfjajqVuyCPEjRBbvxm62zaJU
