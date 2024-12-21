@@ -4,3 +4,7 @@ Track cross-chain transfer here: https://testnet.layerzeroscan.com/tx/3onTKJxjVN
 
 ![alt text](image.png)
 ![alt text](image-1.png)
+
+Sepolia -> Solana
+send: 2000000000000000000 to BQHXVMJo4zGSnLdFRrDnfjajqVuyCPEjRBbvxm62zaJU: 0x460bb12193bbfaeab1f1fe5232bfeb9d44b3e1ed702d27b644fa7530eed7b9df
+Track cross-chain transfer here: https://testnet.layerzeroscan.com/tx/0x460bb12193bbfaeab1f1fe5232bfeb9d44b3e1ed702d27b644fa7530eed7b9df
