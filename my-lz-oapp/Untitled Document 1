@@ -27,4 +27,4 @@ View Solana transaction here: https://explorer.solana.com/tx/3onTKJxjVNvc7PWxGyY
 Track cross-chain transfer here: https://testnet.layerzeroscan.com/tx/3onTKJxjVNvc7PWxGyYYgxYfXxxc9Jz686ZrTjCUTtXJZtpDE659o9xw2CfhLnHysY8sG9jvbwX5fG2cjCscdWPk
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
-npx hardhat --network sepolia-testnet send --dst-eid 40168 --amount 10000000000 --to BQHXVMJo4zGSnLdFRrDnfjajqVuyCPEjRBbvxm62zaJU
+npx hardhat --network sepolia-testnet send --dst-eid 40168 --amount 2000000000000000000 --to BQHXVMJo4zGSnLdFRrDnfjajqVuyCPEjRBbvxm62zaJU
